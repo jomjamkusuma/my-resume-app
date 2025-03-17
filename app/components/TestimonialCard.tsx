@@ -10,15 +10,14 @@ const TestimonialCard = ({
   author: string;
   link: string;
 }) => {
-  console.log(link);
   return (
     <div>
       <div className="w-60 bg-white rounded-3xl p-4">
         <p className="text-sm font-['Helvetica'] font-light text-gray-500 pb-1">
           “{comment}”
         </p>
-        <div className="w-full border-t border-gray-400 py-1"></div>
-        <div className="flex items-center">
+        {/* <div className="w-full border-t border-gray-400 py-1"></div> */}
+        <div className="flex items-center m-2">
           <div className="rounded-full w-10 h-10 bg-gray-400 mr-3"></div>
           <div className="flex-row">
             <p className="text-black">{author}</p>
@@ -27,7 +26,7 @@ const TestimonialCard = ({
                 href={link}
                 target="_blanks"
                 rel="noopener noreferrer"
-                className="cursor-pointer text-gray-500"
+                className="cursor-pointer text-gray-400"
               >
                 @{author}
               </Link>

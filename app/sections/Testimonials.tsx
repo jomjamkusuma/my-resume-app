@@ -2,6 +2,7 @@ import React from "react";
 import { BackgroundLines } from "../components/ui/Background-lines";
 import TestimonialCard from "../components/TestimonialCard";
 import Link from "next/link";
+import TestimonialCardAdd from "../components/TestimonialCardAdd";
 
 interface TestimonialInfo {
   author: string;
@@ -11,6 +12,30 @@ interface TestimonialInfo {
 
 const Testimonials = () => {
   let mock: TestimonialInfo[] = [
+    {
+      author: "Jonh Doe",
+      link: "https://stackoverflow.com/",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at vulputate turpis. In ante mauris, suscipit non dapibus venenatis, tempus ac lac",
+    },
+    {
+      author: "Jonh Doe",
+      link: "https://stackoverflow.com/",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at vulputate turpis. In ante mauris, suscipit non dapibus venenatis, tempus ac lac",
+    },
+    {
+      author: "Jonh Doe",
+      link: "https://stackoverflow.com/",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at vulputate turpis. In ante mauris, suscipit non dapibus venenatis, tempus ac lac",
+    },
+    {
+      author: "Jonh Doe",
+      link: "https://stackoverflow.com/",
+      comment:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at vulputate turpis. In ante mauris, suscipit non dapibus venenatis, tempus ac lac",
+    },
     {
       author: "Jonh Doe",
       link: "https://stackoverflow.com/",
@@ -35,6 +60,9 @@ const Testimonials = () => {
               />
             </div>
           ))}
+          <div className="m-4">
+            <TestimonialCardAdd />
+          </div>
         </div>
       </BackgroundLines>
     </div>
