@@ -1,9 +1,11 @@
-import Interlude from "./sections/Landing";
+import Landing from "./sections/Landing";
+import Testimonials from "./sections/Testimonials";
 
 export default function Home() {
   return (
     <div>
-      <Interlude />
+      <Landing />
+      <Testimonials />
     </div>
   );
 }
