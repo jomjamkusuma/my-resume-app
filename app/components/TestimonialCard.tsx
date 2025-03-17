@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const TestimonialCard = ({
   comment,
@@ -16,21 +17,17 @@ const TestimonialCard = ({
         <p className="text-sm font-['Helvetica'] font-light text-gray-500 pb-1">
           “{comment}”
         </p>
-        {/* <div className="w-full border-t border-gray-400 py-1"></div> */}
-        <div className="flex items-center m-2">
-          <div className="rounded-full w-10 h-10 bg-gray-400 mr-3"></div>
-          <div className="flex-row">
+        <div className="flex justify-start">
+          <AccountCircleIcon sx={{ fontSize: 50 }} />
+          <div className="ml-2">
             <p className="text-black">{author}</p>
-            <div>
-              <Link
-                href={link}
-                target="_blanks"
-                rel="noopener noreferrer"
-                className="cursor-pointer text-gray-400"
-              >
-                @{author}
-              </Link>
-            </div>
+            <Link
+              href={link}
+              target="_blanks"
+              className="cursor-pointer text-gray-400"
+            >
+              @{author}
+            </Link>
           </div>
         </div>
       </div>
