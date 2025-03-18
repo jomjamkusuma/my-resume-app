@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { BackgroundLines } from "../components/ui/Background-lines";
 import TestimonialCard from "../components/TestimonialCard";
 import TestimonialCardAdd from "../components/TestimonialCardAdd";
+import useIsLargeScreen from "../../lib/calculator";
 
 interface TestimonialInfo {
   author: string;
@@ -10,6 +12,7 @@ interface TestimonialInfo {
 }
 
 const Testimonials = () => {
+  const { isLargeScreen } = useIsLargeScreen();
   let mock: TestimonialInfo[] = [
     {
       author: "Jonh Doe",
@@ -43,27 +46,38 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="relative h-screen items-center justify-center">
-      <BackgroundLines className="absolute w-full lg:px-70 bg-[#0b0b0b]">
-        <h1 className="text-fuchsia-400 text-center text-md ">Testimonials</h1>
-        <h1 className="text-white text-4xl text-center p-10">
-          I have worked with these amazing people
-        </h1>
-        <div className="flex flex-wrap justify-center">
-          {mock.map((val, i) => (
-            <div key={i} className="m-4">
-              <TestimonialCard
-                author={val.author}
-                link={val.link}
-                comment={val.comment}
-              />
-            </div>
-          ))}
-          {/* <div className="m-4">
-            <TestimonialCardAdd />
-          </div> keep it for the future when solve the problem of svg on top of the page, it can't be clicked*/}
-        </div>
-      </BackgroundLines>
+    <div className="block h-screen">
+      <div className="relative items-center justify-center">
+        <BackgroundLines className="absolute w-full lg:px-70 bg-[#0b0b0b]">
+          <h1 className="text-fuchsia-400 text-center text-xl ">
+            Testimonials
+          </h1>
+          <h1 className="text-white text-4xl text-center p-10">
+            I have worked with these amazing people
+          </h1>
+          <div className="flex flex-wrap justify-center space-x-4 space-y-4">
+            {isLargeScreen
+              ? mock.map((val, i) => (
+                  <div key={i}>
+                    <TestimonialCard
+                      author={val.author}
+                      link={val.link}
+                      comment={val.comment}
+                    />
+                  </div>
+                ))
+              : mock.slice(0, 2).map((val, i) => (
+                  <div key={i}>
+                    <TestimonialCard
+                      author={val.author}
+                      link={val.link}
+                      comment={val.comment}
+                    />
+                  </div>
+                ))}
+          </div>
+        </BackgroundLines>
+      </div>
     </div>
   );
 };

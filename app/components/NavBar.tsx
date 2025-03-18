@@ -17,9 +17,9 @@ const NavigationBar = () => {
   return (
     <div
       onMouseLeave={() => setPosition((prev) => ({ ...prev, opacity: 0 }))}
-      className="fixed top-10 left-0 right-0"
+      className="fixed z-10 top-10 left-0 right-0"
     >
-      <ul className="z-10 mx-auto flex w-fit rounded-full backdrop-blur-lg border-1 border-white/10 bg-white/5 p-1">
+      <ul className="mx-auto flex w-fit rounded-full backdrop-blur-lg border-1 border-white/10 bg-white/5 p-1">
         <Tab setPosition={setPosition}>Home</Tab>
         <Tab setPosition={setPosition}>Work</Tab>
         <Tab setPosition={setPosition}>About</Tab>
