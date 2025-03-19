@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Gabarito } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Kusuma Resume",
@@ -18,6 +18,7 @@ export default function RootLayout({
       <body>
         <NavigationBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

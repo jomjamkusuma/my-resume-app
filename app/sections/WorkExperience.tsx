@@ -9,15 +9,13 @@ const WorkExperience = () => {
     "rgb(4, 112, 202)",
     "rgb(107, 10, 255)",
     "rgb(183, 0, 218)",
-
     "rgb(230, 64, 92)",
-
     "rgb(249, 129, 47)",
   ];
 
   return (
     <div>
-      <div className="flex justify-center p-5">
+      <div className="flex justify-center pt-5 pb-10">
         <h1 className="text-5xl font-bold text-center">
           Crafting <ColourfulText text="seamless" /> apps with <br />
           Work Experience
@@ -75,7 +73,7 @@ const dummyContent = [
       "consectetur adipiscing elit",
       "Pellentesque laoreet elit vulputate",
       "sapien hendrerit commodo. Morbi tincidunt",
-      " Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
+      " Get started with dozens of web components",
     ],
 
     image: "/logo-pi.png",
