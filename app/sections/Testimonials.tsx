@@ -55,7 +55,7 @@ const Testimonials = () => {
           <h1 className="text-white text-4xl text-center p-10">
             I have worked with these amazing people
           </h1>
-          <div className="flex flex-wrap justify-center space-x-4 space-y-4">
+          <div className="flex flex-wrap justify-center space-x-4 space-y-4 2xl:w-1/3">
             {isLargeScreen
               ? mock.map((val, i) => (
                   <div key={i}>
