@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
-import { ColourfulText } from "../components/ui/colourful-text";
+import { ColourfulText } from "../components/ui/ColorfulText";
 
 const WorkExperience = () => {
   const colors = [
@@ -17,7 +17,7 @@ const WorkExperience = () => {
     <div>
       <div className="justify-center pt-5 pb-10">
         <h1 className="text-xl text-center">Work Experience</h1>
-        <h1 className="text-5xl font-bold text-center">
+        <h1 className="text-5xl font-bold text-center [text-shadow:_0_4px_30px_rgb(253_255_210_/_0.5)]">
           Where I shine <ColourfulText text="bright" />
           <br />
           like a diamond

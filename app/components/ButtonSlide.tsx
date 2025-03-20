@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import EmailForm from "../components/EmailForm";
+import EmailForm from "./EmailForm";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 

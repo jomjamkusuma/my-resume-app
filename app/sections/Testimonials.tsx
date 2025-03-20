@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import { BackgroundLines } from "../components/ui/Background-lines";
+import { BackgroundLines } from "../components/ui/BackgroundLines";
 import TestimonialCard from "../components/TestimonialCard";
-import TestimonialCardAdd from "../components/TestimonialCardAdd";
 import useIsLargeScreen from "../../lib/calculator";
 
 interface TestimonialInfo {

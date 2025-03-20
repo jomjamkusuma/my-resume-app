@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonSlide from "../components/Button-slide";
+import ButtonSlide from "../components/ButtonSlide";
 
 const Contact = () => {
   return (

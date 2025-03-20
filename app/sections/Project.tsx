@@ -1,20 +1,17 @@
 import React from "react";
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-} from "../components/ui/three-d-card";
+import { CardBody, CardContainer, CardItem } from "../components/ui/ThreeDCard";
 import Link from "next/link";
 import Image from "next/image";
-// import SimonGames from "../../public/works-simon-games.png";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
 
 const Projects = () => {
   return (
     <div className="py-5">
       <div className="justify-center text-center">
         <h1 className="text-xl">My recent</h1>
-        <h1 className="text-5xl">Project</h1>
+        <h1 className="text-5xl [text-shadow:_0_4px_20px_rgb(253_255_210_/_0.8)]">
+          Project
+        </h1>
       </div>
       {contents.map((contents, index) => (
         <div
@@ -67,14 +64,14 @@ const Projects = () => {
               </div>
             </CardBody>
           </CardContainer>
-          <div className="px-4 w-96">
+          <div className="lg:px-10 w-96">
             <h1 className="text-xl">{contents.tile}</h1>
             <p className="py-4 text-gray-400">{contents.description}</p>
             <div className="md:pl-10">
               <ul>
                 {contents.bullet.map((item, index) => (
                   <li key={index} className="flex py-1 items-center">
-                    <KeyboardArrowRightIcon sx={{ color: "red" }} />
+                    <AutoFixHighIcon sx={{ color: "#ff6a6a" }} />
                     <p className="md:pl-2">{item}</p>
                   </li>
                 ))}
