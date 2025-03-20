@@ -15,11 +15,17 @@ const WorkExperience = () => {
 
   return (
     <div>
-      <div className="flex justify-center pt-5 pb-10">
+      <div className="justify-center pt-5 pb-10">
+        <h1 className="text-xl text-center">Work Experience</h1>
         <h1 className="text-5xl font-bold text-center">
+          Where I shine <ColourfulText text="bright" />
+          <br />
+          like a diamond
+        </h1>
+        {/* <h1 className="text-5xl font-bold text-center">
           Crafting <ColourfulText text="seamless" /> apps with <br />
           Work Experience
-        </h1>
+        </h1> */}
       </div>
       <div className="flex justify-center px-10">
         <ol className="relative border-s border-gray-200 dark:border-gray-700">

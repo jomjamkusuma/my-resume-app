@@ -15,7 +15,7 @@ const Footer = () => {
               className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
             >
               <LinkedInIcon fontSize="large" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
                 Kusuma Jongpattana
               </span>
             </a>
