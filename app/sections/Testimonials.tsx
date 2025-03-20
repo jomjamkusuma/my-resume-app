@@ -46,16 +46,17 @@ const Testimonials = () => {
     },
   ];
   return (
-    <div className="block h-screen">
-      <div className="relative items-center justify-center">
-        <BackgroundLines className="absolute w-full lg:px-70 bg-[#0b0b0b]">
+    <div className="h-screen">
+      <div className="relative">
+        <BackgroundLines className="absolute w-full inset-0 z-">
+          <div></div>
           <h1 className="text-fuchsia-400 text-center text-xl ">
             Testimonials
           </h1>
           <h1 className="text-white text-4xl text-center p-10">
             I have worked with these amazing people
           </h1>
-          <div className="flex flex-wrap justify-center space-x-4 space-y-4 2xl:w-1/3">
+          <div className="flex flex-wrap justify-center space-x-4 space-y-4 2xl:px-120">
             {isLargeScreen
               ? mock.map((val, i) => (
                   <div key={i}>

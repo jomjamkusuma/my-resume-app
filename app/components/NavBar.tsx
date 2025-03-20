@@ -26,7 +26,6 @@ const NavigationBar = () => {
         <Tab setPosition={setPosition}>Contact</Tab>
         <Cursor position={position} />
       </ul>
-      {/* <Lamp /> */}
     </div>
   );
 };
