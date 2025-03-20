@@ -8,7 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SimonGames from "../../public/works-simon-games.png";
 
-const Works = () => {
+const Projects = () => {
   return (
     <div className="flex px-20 space-x-10 justify-center">
       <CardContainer className="inter-var">
@@ -59,4 +59,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default Projects;
