@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonSlide from "../components/ButtonSlide";
+import TrendingFlatSharpIcon from "@mui/icons-material/TrendingFlatSharp";
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
           <h1 className="text-5xl pb-8 drop-shadow-md">
             Don't hesitate to contact me
           </h1>
-          <ButtonSlide text="Let's connect" />
+          <ButtonSlide text="Let's connect" icon="next"></ButtonSlide>
         </div>
       </div>
     </div>

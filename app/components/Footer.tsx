@@ -19,9 +19,9 @@ const Footer = () => {
                 Kusuma Jongpattana
               </span>
             </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <ul className="flex flex-wrap items-center justify-center space-y-2 md:space-y-0 mb-6 text-sm font-medium text-gray-500 sm:mb-0">
               <li>
-                <a href="#" className="border p-2 rounded-lg me-4 md:me-6">
+                <a href="#" className="border rounded-lg p-2 mb-2 me-4 md:me-6">
                   <FileDownloadIcon /> Resume.pdf
                 </a>
               </li>
@@ -41,7 +41,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline mb-2">
                   Contact
                 </a>
               </li>

@@ -2,7 +2,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/ThreeDCard";
 import Link from "next/link";
 import Image from "next/image";
-import AutoFixHighIcon from "@mui/icons-material/AutoFixHigh";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 
 const Projects = () => {
   return (
@@ -71,7 +71,7 @@ const Projects = () => {
               <ul>
                 {contents.bullet.map((item, index) => (
                   <li key={index} className="flex py-1 items-center">
-                    <AutoFixHighIcon sx={{ color: "#ff6a6a" }} />
+                    <AutoAwesomeIcon sx={{ color: "#ff6a6a" }} />
                     <p className="md:pl-2">{item}</p>
                   </li>
                 ))}
